@@ -1,13 +1,14 @@
 Package: neartools
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Useful tools for daily NEAR work tasks
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Bolin Wu
+Maintainer: Bolin Wu <bolin.wu@ki.se>
+Description: Practice the DRY principle.
+    The goal of this project is to make the daily repetitive work easier.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/Bolin-Wu/neartools
 BugReports: https://github.com/Bolin-Wu/neartools/issues
+RoxygenNote: 7.1.2
