@@ -7,18 +7,18 @@
 pretty_template(name = NULL, open = interactive(), ...)
 }
 \arguments{
-\item{name}{name of rmd file}
+\item{name}{name of rmd file. No need to add suffix ".Rmd".}
 
 \item{open}{should the file be opened after being created}
 
 \item{...}{arguments to be passed to \link[usethis]{use_template}}
 }
 \description{
-Use the skeleton.Rmd for starting analysis. This function creates a new folder "rmd" at root of project and put the rmd file there.
+Use the skeleton.Rmd for starting analysis. This function creates a new folder "rmd" at root of project and create an rmd file with nice-looking template there.
 }
 \examples{
 \donttest{
-neartools::pretty_template()
+neartools::pretty_template(name = "Reply to Prof")
 }
 
 }
