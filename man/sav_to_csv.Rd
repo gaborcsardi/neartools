@@ -30,6 +30,8 @@ After running this function, there should be a new folder "csv_format" storing t
 Please make sure that the `original_data` folder is in your current working directory.
 }
 \examples{
+\dontrun{
 sav_to_sav("original_data", "SNAC_K")
+}
 
 }

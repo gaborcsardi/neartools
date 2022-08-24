@@ -25,7 +25,9 @@
 #'
 #'
 #' @examples
+#' \dontrun{
 #' sav_to_sav("original_data", "SNAC_K")
+#' }
 #'
 #' @export
 #'
