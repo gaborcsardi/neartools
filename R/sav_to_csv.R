@@ -16,7 +16,7 @@
 #' @param data_folder_name The name of the folder where all the data are being stored.
 #' @param db_name The name of specific database's folder, which is located in "data_folder_name".
 #'
-#' @return A folder called "csv_format" will be generated in every database's folder, storing all the transformed csv files.
+#' @return A folder called "csv_format" will be generated in the 'db_name's folder, storing all the transformed csv files.
 #'
 #' @importFrom tools file_path_sans_ext
 #' @importFrom utils write.csv

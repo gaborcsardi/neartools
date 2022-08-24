@@ -12,7 +12,7 @@ sav_to_csv(data_folder_name, db_name)
 \item{db_name}{The name of specific database's folder, which is located in "data_folder_name".}
 }
 \value{
-A folder called "csv_format" will be generated in every database's folder, storing all the transformed csv files.
+A folder called "csv_format" will be generated in the 'db_name's folder, storing all the transformed csv files.
 }
 \description{
 In Maelstrom harmonization package, there is a command 'mlstr_file_index_read()' to read all the study specific data sets.
