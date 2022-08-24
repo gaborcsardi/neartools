@@ -7,14 +7,8 @@
 #' @importFrom here here
 #' @examples
 #' \donttest{
-#' if(interactive()){
-#'   pretty_template()
-#' }
-#' }
-#'
-#' @example
-#'
 #' neartools::pretty_template()
+#' }
 #'
 #' @export
 pretty_template <-

@@ -25,7 +25,7 @@
 #'
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' sav_to_sav("original_data", "SNAC_K")
 #' }
 #'
