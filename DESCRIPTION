@@ -12,3 +12,8 @@ LazyData: true
 URL: https://github.com/Bolin-Wu/neartools
 BugReports: https://github.com/Bolin-Wu/neartools/issues
 RoxygenNote: 7.1.2
+Imports: 
+    haven,
+    here,
+    tools,
+    utils
