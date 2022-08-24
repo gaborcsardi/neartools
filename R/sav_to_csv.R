@@ -18,11 +18,11 @@
 #'
 #' @return A folder called "csv_format" will be generated in every database's folder, storing all the transformed csv files.
 #'
-#' @import
-#' utils
-#' tools
-#' haven
-#' here
+#' @importFrom tools file_path_sans_ext
+#' @importFrom utils write.csv
+#' @importFrom haven read_sav
+#' @importFrom here here
+#'
 #'
 #' @examples
 #' sav_to_sav("original_data", "SNAC_K")
@@ -35,7 +35,7 @@
 
 sav_to_csv <- function(data_folder_name, db_name) {
   # use file.path to create a file path that is compatible on different OS.
-  db_dir <- file.path(data_folder_name, db_name)
+  db_dir <- here(data_folder_name, db_name)
   tb_name <- list.files(path = db_dir, pattern = "\\.sav$")
   # get rid of .sav extension when writing the csv file
   clean_name <- file_path_sans_ext(tb_name)
@@ -50,7 +50,7 @@ sav_to_csv <- function(data_folder_name, db_name) {
 
   for (i in 1:length(tb_name)) {
     # data = read_sav(paste0(data_folder_name,'/',db_name,'/',tb_name[i]))
-    data <- haven::read_sav(file.path(db_dir, tb_name[i]))
-    utils::write.csv(data, file = file.path(output_dir, paste0(clean_name[i], ".csv")), row.names = FALSE)
+    data <- read_sav(file.path(db_dir, tb_name[i]))
+    write.csv(data, file = file.path(output_dir, paste0(clean_name[i], ".csv")), row.names = FALSE)
   }
 }
