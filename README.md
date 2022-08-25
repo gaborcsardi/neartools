@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# neartools
+# Motivation
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -44,16 +44,18 @@ devtools::install_github("Bolin-Wu/neartools")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
+
+# load the package
 library(neartools)
 
 # check function's documentation
 ?sav_to_csv()
 ?pretty_template()
 
-## code usage
+# conver data files
 sav_to_csv("original_data", "SNAC-K")
+
+# initiate a rmd file 
 pretty_template(name = "Reply to Prof XXX")
 ```
