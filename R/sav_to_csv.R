@@ -14,7 +14,7 @@
 #' After running this function, there should be a new folder "csv_format" storing the transformed SNAC-K csv files at "original_data/SNAC-K".
 #'
 #' @param data_folder_name The name of the folder where all the data are being stored.
-#' @param db_name The name of specific database's folder, which is located in "data_folder_name".
+#' @param db_name The name of specific database's folder, which is located in `data_folder_name`.
 #'
 #' @return A folder called "csv_format" will be generated in the 'db_name's folder, storing all the transformed csv files.
 #'
@@ -25,7 +25,7 @@
 #'
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' sav_to_sav("original_data", "SNAC_K")
 #' }
 #'

@@ -41,7 +41,10 @@ This is a basic example which shows you how to solve a common problem:
 ``` r
 library(neartools)
 
-?sav_to_csv
+# check function's documentation
+?sav_to_csv()
+?pretty_template()
+
 ## code usage
 sav_to_csv("original_data", "SNAC-K")
 pretty_template("Reply to Prof XXX")

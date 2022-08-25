@@ -9,7 +9,7 @@ sav_to_csv(data_folder_name, db_name)
 \arguments{
 \item{data_folder_name}{The name of the folder where all the data are being stored.}
 
-\item{db_name}{The name of specific database's folder, which is located in "data_folder_name".}
+\item{db_name}{The name of specific database's folder, which is located in `data_folder_name`.}
 }
 \value{
 A folder called "csv_format" will be generated in the 'db_name's folder, storing all the transformed csv files.
@@ -30,7 +30,7 @@ After running this function, there should be a new folder "csv_format" storing t
 Please make sure that the `original_data` folder is in your current working directory.
 }
 \examples{
-\donttest{
+\dontrun{
 sav_to_sav("original_data", "SNAC_K")
 }
 
