@@ -6,7 +6,7 @@
 #' @importFrom usethis use_template
 #' @importFrom here here
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' neartools::pretty_template(name = "Reply to Prof")
 #' }
 #'

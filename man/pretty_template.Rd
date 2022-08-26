@@ -17,7 +17,7 @@ pretty_template(name = NULL, open = interactive(), ...)
 Use the skeleton.Rmd for starting analysis. This function creates a new folder "rmd" at root of project and create an rmd file with nice-looking template there.
 }
 \examples{
-\donttest{
+\dontrun{
 neartools::pretty_template(name = "Reply to Prof")
 }
 
