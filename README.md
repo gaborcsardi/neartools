@@ -5,8 +5,6 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.com/Bolin-Wu/neartools.svg?branch=master)](https://travis-ci.com/Bolin-Wu/neartools)
 [![R-CMD-check](https://github.com/Bolin-Wu/neartools/workflows/R-CMD-check/badge.svg)](https://github.com/Bolin-Wu/neartools/actions)
 <!-- badges: end -->
 
