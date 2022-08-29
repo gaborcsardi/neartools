@@ -16,7 +16,7 @@ yourself” (DRY) principle, making the daily work more handy.
 
 # Functions
 
-Currently, this package contains functions as follows:
+This package contains functions as follows:
 
 -   `sav_to_csv`: Convert all the SPSS data files (*.sav*) to csv files.
     This conversion is needed because the maelstrom harmonization
@@ -47,6 +47,7 @@ devtools::install_github("Bolin-Wu/neartools")
 ## Example
 
 ``` r
+
 # load the package
 library(neartools)
 

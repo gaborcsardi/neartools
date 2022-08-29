@@ -27,7 +27,7 @@ The goal of creating this package is to practice the "don't repeat yourself" (DR
 
 # Functions
 
-Currently, this package contains functions as follows:
+This package contains functions as follows:
 
 * `sav_to_csv`: Convert all the SPSS data files (*.sav*) to csv files. This conversion is needed because the maelstrom harmonization package does not read *.sav* data. This function can prevent repetitive work of converting *.sav* to *.csv* one by one. \
 More details please see description in  `?sav_to_csv()`
