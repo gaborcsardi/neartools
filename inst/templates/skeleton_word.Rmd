@@ -1,0 +1,26 @@
+---
+title: "Template"
+author:
+  - name: "Your Name"
+    affiliation: "Your company/university"
+date: 'YYYY-MM-DD (updated: `r Sys.Date()`) '
+output:
+  word_document:
+    toc: yes
+    toc_depth: 2
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+# By default, all codes are hidden. 
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, include = FALSE)
+library(haven)
+library(tidyverse)
+library(here)
+```
+
+## Introduction
+
+## Analysis
+
+## Conclusions
