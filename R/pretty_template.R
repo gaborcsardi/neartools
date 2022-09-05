@@ -17,10 +17,9 @@ pretty_template <-
            output_file = "html",
            open = interactive(),
            ...) {
-
-    if(is.null(name)){
+    if (is.null(name)) {
       name <- "analysis.Rmd"
-    } else{
+    } else {
       name <- paste0(name, ".Rmd")
     }
 
@@ -29,16 +28,18 @@ pretty_template <-
 
     # usethis::use_package("usethis")
     if (output_file == "html") {
-    usethis::use_template("skeleton.Rmd",
-                          save_as=  paste0("rmd/", name),
-                          data = list(),
-                          package = "neartools", ..., open = open)
-    } else if (output_file == "word"){
+      usethis::use_template("skeleton.Rmd",
+        save_as = paste0("rmd/", name),
+        data = list(),
+        package = "neartools", ..., open = open
+      )
+    } else if (output_file == "word") {
       usethis::use_template("skeleton_word.Rmd",
-                            save_as=  paste0("rmd/", name),
-                            data = list(),
-                            package = "neartools", ..., open = open)
-    } else{
+        save_as = paste0("rmd/", name),
+        data = list(),
+        package = "neartools", ..., open = open
+      )
+    } else {
       stop("The 'output_file should be 'html' or 'word'")
     }
   }

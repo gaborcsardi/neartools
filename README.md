@@ -47,7 +47,6 @@ devtools::install_github("Bolin-Wu/neartools")
 ## Example
 
 ``` r
-
 # load the package
 library(neartools)
 
@@ -59,5 +58,5 @@ library(neartools)
 sav_to_csv("original_data", "SNAC-K")
 
 # initiate a rmd file 
-pretty_template(name = "Reply to Prof XXX")
+pretty_template(name = "Reply to Prof XXX", output_file = "word")
 ```
