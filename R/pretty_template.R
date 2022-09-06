@@ -40,6 +40,6 @@ pretty_template <-
         package = "neartools", ..., open = open
       )
     } else {
-      stop("The 'output_file should be 'html' or 'word'")
+      stop("The 'output_file' should be 'html' or 'word'")
     }
   }
