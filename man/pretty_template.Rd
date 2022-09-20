@@ -7,7 +7,7 @@
 pretty_template(name = NULL, output_file = "html", open = interactive(), ...)
 }
 \arguments{
-\item{name}{name of rmd file. No need to add suffix ".Rmd".}
+\item{name}{name of rmd file. (no need to add suffix ".Rmd")}
 
 \item{output_file}{"word" or "html", by default it is "html"}
 

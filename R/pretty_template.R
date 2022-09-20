@@ -1,6 +1,6 @@
 #' @title pretty_template
 #' @description Use the skeleton.Rmd for starting analysis. This function creates a new folder "rmd" at root of project and create an rmd file with nice-looking template there.
-#' @param name name of rmd file. No need to add suffix ".Rmd".
+#' @param name name of rmd file. (no need to add suffix ".Rmd")
 #' @param open should the file be opened after being created
 #' @param output_file "word" or "html", by default it is "html"
 #' @param ... arguments to be passed to \link[usethis]{use_template}
