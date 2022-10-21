@@ -21,7 +21,6 @@ This replacement only applies to 'character' columns.
 }
 \examples{
 \dontrun{
-
 fix_empty_string("baseline_example_Nurse_220504")
 }
 }

@@ -18,7 +18,7 @@
 #' }
 #' @export
 #'
-#' @import magrittr
+#' @importFrom magrittr %>%
 #' @import dplyr
 #' @import tibble
 #'

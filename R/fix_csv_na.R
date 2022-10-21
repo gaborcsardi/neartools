@@ -9,14 +9,13 @@
 #' @note This replacement only applies to 'character' columns.
 #'
 #' @import dplyr
-#' @import magrittr
+#' @importFrom magrittr %>%
 #'
 #' @return A tibble with empty strings are replaced as 'NA'.
 #' @export
 #'
 #' @examples
 #' \dontrun{
-#'
 #' fix_empty_string("baseline_example_Nurse_220504")
 #' }
 fix_empty_string <- function(df_name) {
