@@ -5,7 +5,6 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/Bolin-Wu/neartools/workflows/R-CMD-check/badge.svg)](https://github.com/Bolin-Wu/neartools/actions)
 [![R-CMD-check](https://github.com/Bolin-Wu/neartools/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Bolin-Wu/neartools/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/Bolin-Wu/neartools/branch/master/graph/badge.svg)](https://app.codecov.io/gh/Bolin-Wu/neartools?branch=master)
