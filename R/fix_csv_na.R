@@ -9,6 +9,7 @@
 #' @note This replacement only applies to 'character' columns.
 #'
 #' @import dplyr
+#' @import magrittr
 #'
 #' @return A tibble with empty strings are replaced as 'NA'.
 #' @export
