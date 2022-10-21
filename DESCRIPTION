@@ -23,4 +23,5 @@ Imports:
     usethis,
     utils
 Suggests: 
-    rmarkdown
+    rmarkdown,
+    roxygen2
