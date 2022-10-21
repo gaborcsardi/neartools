@@ -1,0 +1,47 @@
+
+fix_dup_id <- function(df) {
+  # df = baseline_example_Physician_220504
+  # select the column of id
+  id_nr <- df %>%
+    select(contains("lopnr")) %>%
+    colnames(.)
+
+  if (length(unique(df[[id_nr]])) == length(df[[id_nr]])) {
+    warning("There is no duplicated id!")
+  }
+  # freq table of column contains "lopnr"
+  n_occur <- data.frame(table(
+    df %>%
+      select(id_nr)
+  ))
+  # filter out replicated id
+  freq_tab <- n_occur[n_occur$Freq > 1, ]
+  # find the replicated id
+  rep_id <- freq_tab$Var1
+  # store new lopnr
+  new_lopnr <- c()
+  i <- 1
+  while (i <= nrow(df)) {
+    id_check <- as.numeric(df[i, id_nr])
+    if (!id_check %in% rep_id) {
+      new_lopnr[i] <- id_check
+      i <- i + 1
+    } else if (id_check %in% rep_id) {
+      rep_freq <-
+        freq_tab %>%
+        filter(Var1 == id_check) %>%
+        pull(Freq)
+      new_lopnr[i:(i + rep_freq - 1)] <- id_check + 0.1 * seq(0, rep_freq - 1)
+      i <- i + rep_freq
+    }
+  }
+  # add new id to the df
+  df_update = df %>% add_column(new_lopnr = new_lopnr, .before = id_nr)
+  return(list(
+    logic_rep = !length(unique(df[[id_nr]])) == length(df[[id_nr]]),
+    new_lopnr = new_lopnr,
+    replicated_id = rep_id,
+    df_update = df_update
+  ))
+}
+
