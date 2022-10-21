@@ -23,5 +23,6 @@ Imports:
     usethis,
     utils
 Suggests: 
+    covr,
     rmarkdown,
     roxygen2
