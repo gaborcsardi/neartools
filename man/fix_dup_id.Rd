@@ -29,7 +29,7 @@ The new ID can be temporarily used as primary key when importing data to MySQL.
 }
 \examples{
 \dontrun{
-fix_dup_id(baseline_example_Physician_220504)
+neartools::fix_dup_id(baseline_example_Relative_220504)$logic_rep
 }
 
 

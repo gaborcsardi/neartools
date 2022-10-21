@@ -14,8 +14,13 @@ URL: https://github.com/Bolin-Wu/neartools,
 BugReports: https://github.com/Bolin-Wu/neartools/issues
 RoxygenNote: 7.2.1
 Imports: 
+    dplyr,
     haven,
     here,
+    magrittr,
+    tibble,
     tools,
     usethis,
     utils
+Suggests: 
+    rmarkdown
