@@ -35,6 +35,8 @@ This package contains functions as follows:
     For more information about R markdown please see
     [here](https://rmarkdown.rstudio.com).
 
+-   `fix_dup_id`: Check the ID duplication.
+
 -   *To be continued….*
 
 ## Installation
@@ -50,16 +52,21 @@ devtools::install_github("Bolin-Wu/neartools")
 ## Example
 
 ``` r
+
 # load the package
 library(neartools)
 
 # check function's documentation
 ?sav_to_csv()
 ?pretty_template()
+?fix_dup_id()
 
 # conver data files
 sav_to_csv("original_data", "SNAC-K")
 
 # initiate a rmd file 
 pretty_template(name = "Reply to Prof XXX", output_file = "word")
+
+# check ID duplication
+fix_dup_id(df = baseline_example_Relative_220504, id_str = "lopnr")
 ```
