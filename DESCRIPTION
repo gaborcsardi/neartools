@@ -27,4 +27,5 @@ Suggests:
     covr,
     rmarkdown,
     roxygen2,
-    rmdformats
+    rmdformats,
+    flextable
