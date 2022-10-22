@@ -42,7 +42,7 @@ sav_to_csv <- function(data_folder_name, db_name) {
   # get rid of .sav extension when writing the csv file
   clean_name <- file_path_sans_ext(tb_name)
   # replace space with underscore
-  clean_name = gsub(" ", "_", clean_name)
+  clean_name <- gsub(" ", "_", clean_name)
   output_dir <- file.path(data_folder_name, db_name, "csv_format")
 
   if (!dir.exists(output_dir)) {

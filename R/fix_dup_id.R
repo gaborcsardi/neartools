@@ -19,22 +19,30 @@
 #' @export
 #'
 #' @importFrom magrittr %>%
+#' @importFrom stringr str_detect
 #' @import dplyr
 #' @import tibble
 #'
 #'
 #' @examples
 #' \dontrun{
-#' neartools::fix_dup_id(baseline_example_Relative_220504)$logic_rep
+#' neartools::fix_dup_id(baseline_example_Relative_220504, "lopnr")$logic_rep
 #' }
 #'
-#'
-fix_dup_id <- function(df) {
+fix_dup_id <- function(df, id_str) {
   df_name <- deparse(substitute(df))
+  df_colnames <- colnames(df)
+  # check the existance of id_str
+  check_id_str <- stringr::str_detect(df_colnames, id_str)
+  if (!any(check_id_str)) {
+    stop(paste0("Can not find id column contains: ", id_str))
+  }
+  # check only one column contains id_str
+  if (length(df_colnames[check_id_str]) > 1) {
+    stop(paste("There are more than 1 columns contain string: ", id_str))
+  }
   # select the column of id
-  id_nr <- df %>%
-    select(contains("lopnr")) %>%
-    colnames(.)
+  id_nr <- df_colnames[check_id_str]
 
   if (length(unique(df[[id_nr]])) == length(df[[id_nr]])) {
     stop("There is no duplicated id!")
@@ -46,7 +54,7 @@ fix_dup_id <- function(df) {
     df %>%
       select(id_nr)
   ))
-  colnames(n_occur) = c("id","Freq")
+  colnames(n_occur) <- c("id", "Freq")
   # filter out replicated id
   freq_tab <- n_occur[n_occur$Freq > 1, ]
   # find the replicated id

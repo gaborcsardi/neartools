@@ -21,7 +21,8 @@ Imports:
     tibble,
     tools,
     usethis,
-    utils
+    utils,
+    stringr
 Suggests: 
     covr,
     rmarkdown,

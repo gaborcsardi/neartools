@@ -4,7 +4,7 @@
 \alias{fix_dup_id}
 \title{Fix replicated id in a data file}
 \usage{
-fix_dup_id(df)
+fix_dup_id(df, id_str)
 }
 \arguments{
 \item{df}{A tibble to be examined.}
@@ -29,8 +29,7 @@ The new ID can be temporarily used as primary key when importing data to MySQL.
 }
 \examples{
 \dontrun{
-neartools::fix_dup_id(baseline_example_Relative_220504)$logic_rep
+neartools::fix_dup_id(baseline_example_Relative_220504, "lopnr")$logic_rep
 }
-
 
 }
