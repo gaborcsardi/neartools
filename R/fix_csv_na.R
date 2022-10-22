@@ -4,7 +4,7 @@
 #' When importing the csv file to MySQL workbench, if there is a cell with empty strings, the 'Wizard Import' function would skip that row.
 #' To fix this problem, we need to replace the empty string with "NA" so that we can import all records into MySQL.
 #'
-#' @param df_name A tibble in R.
+#' @param df_name A tibble name in R. It should be a string.
 #'
 #' @note This replacement only applies to 'character' columns.
 #'

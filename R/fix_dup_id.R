@@ -46,10 +46,11 @@ fix_dup_id <- function(df) {
     df %>%
       select(id_nr)
   ))
+  colnames(n_occur) = c("id","Freq")
   # filter out replicated id
   freq_tab <- n_occur[n_occur$Freq > 1, ]
   # find the replicated id
-  rep_id <- freq_tab$Var1
+  rep_id <- freq_tab$id
   # store new lopnr
   new_lopnr <- c()
   i <- 1
@@ -61,7 +62,7 @@ fix_dup_id <- function(df) {
     } else if (id_check %in% rep_id) {
       rep_freq <-
         freq_tab %>%
-        filter(Var1 == id_check) %>%
+        filter(id == id_check) %>%
         pull(Freq)
       new_lopnr[i:(i + rep_freq - 1)] <- id_check + 0.1 * seq(0, rep_freq - 1)
       i <- i + rep_freq

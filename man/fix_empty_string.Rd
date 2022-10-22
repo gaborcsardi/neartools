@@ -7,7 +7,7 @@
 fix_empty_string(df_name)
 }
 \arguments{
-\item{df_name}{A tibble in R.}
+\item{df_name}{A tibble name in R. It should be a string.}
 }
 \value{
 A tibble with empty strings are replaced as 'NA'.
