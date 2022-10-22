@@ -8,6 +8,8 @@ fix_dup_id(df, id_str)
 }
 \arguments{
 \item{df}{A tibble to be examined.}
+
+\item{id_str}{A string that should contain ID name. E.g. "lopnr".}
 }
 \value{
 A list with examination results

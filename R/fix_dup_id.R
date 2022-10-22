@@ -8,6 +8,7 @@
 #' The new ID can be temporarily used as primary key when importing data to MySQL.
 #'
 #' @param df A tibble to be examined.
+#' @param id_str A string that should contain ID name. E.g. "lopnr".
 #'
 #' @return A list with examination results
 #' \itemize{
