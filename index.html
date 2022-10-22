@@ -76,7 +76,14 @@ More details please see description in <code>?sav_to_csv()</code></p></li>
 <li><p><code>pretty_template</code>: Automatically create an ‘rmd’ folder, create &amp; open an rmd file with a nice looking template. This facilitates the communication with researchers &amp; tracking the records. By default it complies an <em>html</em> file.<br>
 More details please see description in <code>?pretty_template()</code>.<br>
 For more information about R markdown please see <a href="https://rmarkdown.rstudio.com" class="external-link">here</a>.</p></li>
-<li><p><code>fix_dup_id</code>: Check the ID duplication.</p></li>
+<li>
+<p><code>fix_dup_id</code>: Check the ID duplication. It gives a list with examination results.</p>
+<ul>
+<li>If a dataframe has replicated ID or not. If yes:</li>
+<li>A new distinct ID. E.g, for both people with ID = 2, the new ID are 2.0, 2.1. Appened before original ID column.</li>
+<li>Specific replicated ID. May need to report them to local DBM to double check those IDs.</li>
+</ul>
+</li>
 <li><p><em>To be continued….</em></p></li>
 </ul>
 <div class="section level2">
