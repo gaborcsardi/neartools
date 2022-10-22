@@ -26,4 +26,5 @@ Imports:
 Suggests: 
     covr,
     rmarkdown,
-    roxygen2
+    roxygen2,
+    rmdformats
