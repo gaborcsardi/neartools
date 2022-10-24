@@ -59,7 +59,6 @@ devtools::install_github("Bolin-Wu/neartools")
 ## Example
 
 ``` r
-
 # load the package
 library(neartools)
 

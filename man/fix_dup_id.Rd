@@ -23,10 +23,10 @@ A list with examination results
 \description{
 In NEAR, we use ID (lopnr) to identify a specific participant. If two people share the same ID, there must be a problem.
 This function is used to:
-* Check if a data file has replicated ID.
-* If there is replicated id, find out which IDs are replicated. Generate new distinct new id & append it before the original ID column.
+\itemize{
+  \item Check if a data file has replicated ID.
+  \item If there is replicated id, find out which IDs are replicated. Generate new distinct new id & append it before the original ID column.
 }
-\details{
 The new ID can be temporarily used as primary key when importing data to MySQL.
 }
 \examples{
