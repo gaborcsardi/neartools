@@ -59,12 +59,12 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><div class="section level1">
+  <main id="main" class="col-md-9">
+<div class="section level1">
 <div class="page-header"><h1 id="motivation">Motivation<a class="anchor" aria-label="anchor" href="#motivation"></a>
 </h1></div>
-<!-- badges: start -->
 <p>There are many repetitive works when doing data harmonization and keeping track of communication with researchers.</p>
-<p>The goal of creating this package is to practice the “don’t repeat yourself” (DRY) principle, making the daily work more handy.</p>
+<p>The goal of this package is to practice the “don’t repeat yourself” (DRY) principle, making the daily work more handy.</p>
 </div>
 <div class="section level1">
 <h1 id="functions">Functions<a class="anchor" aria-label="anchor" href="#functions"></a>
@@ -79,9 +79,9 @@ For more information about R markdown please see <a href="https://rmarkdown.rstu
 <li>
 <p><code>fix_dup_id</code>: Check the ID duplication. It gives a list with examination results.</p>
 <ul>
-<li>If a dataframe has replicated ID or not. If yes:</li>
-<li>A new distinct ID. E.g, for both people with ID = 2, the new ID are 2.0, 2.1. Appened before original ID column.</li>
+<li>If a dataframe has replicated IDs or not. If yes:</li>
 <li>Specific replicated ID. May need to report them to local DBM to double check those IDs.</li>
+<li>A new distinct ID. E.g, for both people with ID = 2, the new ID are 2.0, 2.1, etc. It is appended before original ID column. This new ID creation is not a recommended solution. It is just a temporary instrument for further other works, e.g. importing data to SQL database.</li>
 </ul>
 </li>
 <li><p><em>To be continued….</em></p></li>
@@ -151,9 +151,7 @@ For more information about R markdown please see <a href="https://rmarkdown.rstu
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/Bolin-Wu/neartools/actions" class="external-link"><img src="https://github.com/Bolin-Wu/neartools/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://github.com/Bolin-Wu/neartools/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/Bolin-Wu/neartools/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://app.codecov.io/gh/Bolin-Wu/neartools?branch=master" class="external-link"><img src="https://codecov.io/gh/Bolin-Wu/neartools/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 
