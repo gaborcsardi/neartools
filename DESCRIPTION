@@ -28,5 +28,4 @@ Suggests:
     rmarkdown,
     roxygen2,
     rmdformats,
-    flextable,
-    pak
+    flextable
