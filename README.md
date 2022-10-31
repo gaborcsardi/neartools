@@ -38,7 +38,7 @@ This package contains functions as follows:
 -   `fix_dup_id`: Check the ID duplication. It gives a list with
     examination results.
 
-    -   If a dataframe has replicated ID or not. If yes:
+    -   If a dataframe has replicated IDs or not. If yes:
     -   Specific replicated ID. May need to report them to local DBM to
         double check those IDs.
     -   A new distinct ID. E.g, for both people with ID = 2, the new ID
