@@ -39,10 +39,13 @@ This package contains functions as follows:
     examination results.
 
     -   If a dataframe has replicated ID or not. If yes:
-    -   A new distinct ID. E.g, for both people with ID = 2, the new ID
-        are 2.0, 2.1. Appened before original ID column.
     -   Specific replicated ID. May need to report them to local DBM to
         double check those IDs.
+    -   A new distinct ID. E.g, for both people with ID = 2, the new ID
+        are 2.0, 2.1, etc. It is appended before original ID column.
+        This new ID creation is not a recommended solution. It is just a
+        temporary instrument for further other works, e.g. importing
+        data to SQL database.
 
 -   *To be continued….*
 
