@@ -14,8 +14,8 @@ coverage](https://codecov.io/gh/Bolin-Wu/neartools/branch/master/graph/badge.svg
 There are many repetitive works when doing data harmonization and
 keeping track of communication with researchers.
 
-The goal of creating this package is to practice the “don’t repeat
-yourself” (DRY) principle, making the daily work more handy.
+The goal of this package is to practice the “don’t repeat yourself”
+(DRY) principle, making the daily work more handy.
 
 # Functions
 
